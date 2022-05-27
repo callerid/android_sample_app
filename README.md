@@ -22,6 +22,7 @@ Follow the instructions below:
     .\emulator.exe -avd Pixel -feature -Wifi 
     ```
   - The previous command will fill (prevent you from using it) the current terminal so you will need to open another terminal by clicking the plus button in the Terminal window area.
+  #### Conntecting to your Android emulator
   - In order to do the next few steps you need a program called 'telnet' : follow [these instructions](https://www.technipages.com/windows-10-enable-telnet) to make sure it's installed
   - In the second terminal type:
     ```
@@ -41,13 +42,10 @@ Follow the instructions below:
     ```
   - You have now added a redirection from your local machine into your Android Studio emulator.
   - Run the sample application
+  #### Setup REQUIRED for CallerID.com's Ethernet Emulator
   - Open CallerID.com's Ethernet Emulator and set the IP address at the top to: ```127.0.0.1```
-
-
-You should be able to send test calls into an emulated UDP port 3520 networked application now.
-
-
-
+  - Select your format options and click Send.
+  - Now you should be able to send test calls into the Sample Application without the need of a CallerID.com device.
 
 # Help
 If you are unable to get the UDP redirection working, refer to the [Manual: Redirection](https://developer.android.com/studio/run/emulator-networking#consoleredir)
