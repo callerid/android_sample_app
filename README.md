@@ -29,7 +29,8 @@ Follow the instructions below to launch and configure your emulator for CallerID
     telnet local host 5554
     ````
     *Note: the '5554' may be different if running more than one emulator*
-  - The above command will prompt you with the location of your Android authentication file, commonly found in: 'C:\Users\YourUsername\.emulator_console_auth_token'
+    
+  - The above command will prompt you with the location of your Android authentication file, commonly found in: 'C:\Users\YourUsername\\.emulator_console_auth_token'
   - Open your authentication file and copy all the contents to your clipboard.
   - In your telnet terminal type 'auth' and paste your token as shown below:
     ```
