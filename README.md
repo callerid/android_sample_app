@@ -4,7 +4,7 @@ Android Sample Caller ID Application - min API 25
 ## Developing using Android Studio's emulator
 All CallerID.com applications that interface with Ethernet Link (EL) devices require binding to UDP port 3520. Android Studio emulators create a virtual, isolated network. 
 
-Packets sent on port 3520 by [CallerID.com's Ethernet Emulator Deluxe ](https://callerid.com/developers.php?tab=test) will need to be re-directed to the Android Studio's emulator. This allows Caller ID packets to be seen by the sample app. This can be accomplished using a program called 'telnet'.
+Packets sent on port 3520 by [CallerID.com's Ethernet Emulator Deluxe ](https://callerid.com/developers.php?tab=test) or CallerID.com's Hardware devices will need to be re-directed to the Android Studio's emulator. This allows Caller ID packets to be seen by the sample app. This can be accomplished using a program called 'telnet'.
 
 Follow the instructions below to launch and configure your emulator for CallerID.com testing support.
 
@@ -46,16 +46,15 @@ Follow the instructions below to launch and configure your emulator for CallerID
 
 In addition to the above steps, you must choose how you will perform test calls. Below are your two options.
 
-## With CallerID.com's Hardware Devices
-  - Launch 'Emulator Redirector.exe' located at the root of this repo.
-  - Confirm you have connected the CallerID.com Ethernet device
-  - Perform test calls
-
 ## With CallerID.com's Ethernet Emulator
   - Open CallerID.com's Ethernet Emulator and set the IP address at the top to: ```127.0.0.1```
   - Select your format options and click Send.
   - Now you should be able to send test calls into the Sample Application without the need of a CallerID.com device.
- 
+
+## With CallerID.com's Hardware Devices
+  - Launch 'Emulator Redirector.exe' located at the root of this repo.
+  - Confirm you have connected the CallerID.com Ethernet device
+  - Perform test calls
 
 # Help
 If you are unable to get the UDP redirection working, refer to the [Manual: Redirection](https://developer.android.com/studio/run/emulator-networking#consoleredir)
