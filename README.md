@@ -45,12 +45,12 @@ Follow the instructions below to launch and configure your emulator for CallerID
 
 In addition to the above steps, you must choose how you will perform test calls. Below are your two options.
 
-# With CallerID.com's Hardware Devices
+## With CallerID.com's Hardware Devices
   - Launch 'Emulator Redirector.exe' located at the root of this repo.
   - Confirm you have connected the CallerID.com Ethernet device
   - Perform test calls
 
-# With CallerID.com's Ethernet Emulator
+## With CallerID.com's Ethernet Emulator
   - Open CallerID.com's Ethernet Emulator and set the IP address at the top to: ```127.0.0.1```
   - Select your format options and click Send.
   - Now you should be able to send test calls into the Sample Application without the need of a CallerID.com device.
