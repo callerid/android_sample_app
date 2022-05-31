@@ -6,9 +6,9 @@ All CallerID.com applications that interface with Ethernet Link (EL) devices req
 
 Packets sent on port 3520 by [CallerID.com's Ethernet Emulator Deluxe ](https://callerid.com/developers.php?tab=test) or CallerID.com's Hardware devices will need to be re-directed to the Android Studio's emulator. This allows Caller ID packets to be seen by the sample app. This can be accomplished using a program called 'telnet'.
 
-Follow the instructions below to launch and configure your emulator for CallerID.com testing support.
+Follow the instructions below to configure your emulator for CallerID.com testing support.
 
-  #### Running your Emulator
+  #### Run your Emulator
   - Select the terminal tab at the bottom of Android Studio.
   - Inside the terminal type the follow:
     
@@ -22,7 +22,7 @@ Follow the instructions below to launch and configure your emulator for CallerID
     .\emulator.exe -avd Pixel -feature -Wifi 
     ```
   - The previous command will fill (prevent you from using it) the current terminal so you will need to open another terminal by clicking the plus button in the Terminal window area.
-  #### Conntecting to your Android emulator
+  #### Connecting to your Android emulator
   - In order to do the next few steps you need a program called 'telnet' : follow [these instructions](https://www.technipages.com/windows-10-enable-telnet) to make sure it's installed
   - In the second terminal type:
     ```
