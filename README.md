@@ -2,11 +2,9 @@
 Android Sample Caller ID Application - min API 25
 
 ## Developing using Android Studio's emulator
-All CallerID.com applications that interface with Ethernet Link (EL) devices require binding to UDP port 3520. Android Studio emulators create a virtual, isolated network. 
+CallerID.com applications receive Caller ID data on UDP port 3520.  Since Android Studio emulators create a virtual, isolated network, packets sent by either CallerID.com hardware or [CallerID.com's Ethernet Emulator Deluxe ](https://callerid.com/developers.php?tab=test) will need to be re-directed to the Android Studio's emulator allowing Caller ID packets to be seen by the sample app. Use a program called 'telnet' to define the re-direction. 
 
-Packets sent on port 3520 by [CallerID.com's Ethernet Emulator Deluxe ](https://callerid.com/developers.php?tab=test) or CallerID.com's Hardware devices will need to be re-directed to the Android Studio's emulator. This allows Caller ID packets to be seen by the sample app. This can be accomplished using a program called 'telnet'.
-
-Follow the instructions below to configure your emulator for CallerID.com testing support.
+Follow the instructions below to configure your Android Studio emulator for CallerID.com testing.
 
   #### Run your Emulator
   - Select the terminal tab at the bottom of Android Studio.
